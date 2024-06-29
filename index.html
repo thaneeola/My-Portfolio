@@ -26,14 +26,21 @@
     <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- page pilling CSS -->
+  
+
     <title>Thanee_ola Portfolio</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ 
   </head>
 
   <body>
     <!--========== SIDEBAR ==========-->
-  <div class="nav__toggle" id="nav-toggle">
-    <i class="uil uil-bars"></i>
-  </div>
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="uil uil-bars"></i>
+    </div>
 
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
@@ -75,6 +82,7 @@
       </nav>
     </aside>
     <!--========== MAIN ==========-->
+
     <main class="main">
       <!--===== Home =====-->
       <section class="home" id="home">
@@ -106,7 +114,11 @@
             </div>
           </div>
           <div class="home__data">
-            <img src="assets/img/IMG_20230421_095125_956 1.png" alt="" class="home__img" />
+            <img
+              src="assets/img/IMG_20230421_095125_956 1.png"
+              alt=""
+              class="home__img"
+            />
             <h1 class="home__title">Hi, I'am Thanee_ola</h1>
             <h3 class="home__subtitle">Frontend developer</h3>
             <p class="home__description">
@@ -154,7 +166,7 @@
         </div>
       </section>
       <!--===== About =====-->
-      <section class="about section" id="about">
+      <section class="about section pilling" id="about">
         <h2 data-heading="My intro" class="section__title">About Me</h2>
 
         <div class="about__container container grid">
@@ -196,7 +208,7 @@
         </div>
       </section>
       <!--===== Qualification =====-->
-      <section class="qualification section">
+      <section class="qualification section pilling">
         <h2 data-heading="My Journey" class="section__title">Qualification</h2>
 
         <div class="qualification__container container grid">
@@ -286,7 +298,7 @@
         </div>
       </section>
       <!--===== Skills =====-->
-      <section class="skills section" id="skills">
+      <section class="skills section pilling" id="skills">
         <h2 data-heading="My Abilities " class="section__title">
           My Experience
         </h2>
@@ -421,7 +433,7 @@
         </div>
       </section>
       <!--===== Work =====-->
-      <section class="work section" id="work">
+      <section class="work section pilling" id="work">
         <h2 data-heading="My Portfolio " class="section__title">
           Recent Works
         </h2>
@@ -580,7 +592,7 @@
         </div>
       </section>
       <!-- Portfolio Popup -->
-      <div class="portfolio__popup">
+      <div class="portfolio__popup pilling">
         <div class="portfolio__popup-inner">
           <div class="portfolio__popup-content grid">
             <span class="portfolio__popup-close"
@@ -618,7 +630,7 @@
         </div>
       </div>
       <!--===== Services =====-->
-      <section class="services section" id="services">
+      <section class="services section pilling" id="services">
         <h2 data-heading="Services " class="section__title">What I Offer</h2>
 
         <div class="services__container container grid">
@@ -792,7 +804,7 @@
         </div>
       </section>
       <!--===== Testimonials =====-->
-      <section class="testimonials section">
+      <section class="testimonials section pilling">
         <h2 data-heading="My clients say" class="section__title">
           Testimonials
         </h2>
@@ -953,7 +965,7 @@
         </div>
       </section>
       <!--===== Contact =====-->
-      <section class="contact section" id="contact">
+      <section class="contact section pilling" id="contact">
         <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
 
         <div class="contact__container container grid">
@@ -992,46 +1004,79 @@
           </div>
 
           <div class="contact__content">
-            <form action="" class="contact__form">
+            <form
+              class="contact__form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="bfd2f133-3866-407f-963e-a257ff65e2e0"
+              />
               <div class="input__container">
-                <input type="text" class="input" />
+                <input
+                  type="text"
+                  name="name"
+                  class="input"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
                 <label for="">Username</label>
                 <span>Username</span>
               </div>
 
               <div class="input__container">
-                <input type="email" class="input" />
+                <input
+                  type="email"
+                  class="input"
+                  id="email"
+                  autocomplete="off"
+                  name="email"
+                  required
+                />
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
 
               <div class="input__container">
-                <input type="tel" class="input" />
+                <input
+                  type="tel"
+                  class="input"
+                  id="phone"
+                  autocomplete="off"
+                  name="phone"
+                  required
+                />
                 <label for="">Phone</label>
                 <span>Phone</span>
               </div>
 
               <div class="input__container textarea">
                 <textarea
-                  name=""
-                  id=""
+                  name="text"
+                  id="message"
                   cols="30"
                   rows="10"
                   class="input"
+                  autocomplete="off"
                 ></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
 
-              <button type="submit" class="button">
+              <button type="submit" class="button" id="button">
                 <i class="uil uil-navigator button__icon"></i> Send Message
               </button>
             </form>
           </div>
         </div>
       </section>
+
+  
       <!--===== FOOTER =====-->
-      <footer class="footer">
+      <footer class="footer pilling">
         <div class="footer__bg">
           <div class="footer__container container grid">
             <div>
@@ -1081,7 +1126,7 @@
       </footer>
     </main>
 
-    <!--========== SCROLL UP ==========-->
+    <!--========== smtpjs ==========-->
 
     <!--========== MIXITUP FILTER ==========-->
     <script src="assets/js/mixitup.min.js"></script>
@@ -1090,6 +1135,10 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--========== MAIN JS ==========-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./jquery.pagepiling.min.js"></script>
+    <script src="jquery.ripples-min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

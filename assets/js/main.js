@@ -1,25 +1,22 @@
 /*=============== SHOW SIDEBAR ===============*/
-const navMenu = document.getElementById('sidebar'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById("sidebar"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
-if(navToggle){
-  navToggle.addEventListener('click', () =>{
-    navMenu.classList.add('show-sidebar')
-
-})
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-sidebar");
+  });
 }
-
 
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
-if(navClose){
-  navClose.addEventListener('click', () =>{
-    navMenu.classList.remove('show-sidebar')
-
-})
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-sidebar");
+  });
 }
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll("[data-target]"),
@@ -130,47 +127,58 @@ let swiper = new Swiper(".testimonials__container", {
   },
 });
 /*=============== INPUT ANIMATION ===============*/
-const inputs = document.querySelectorAll('.input')
+const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
-  let parent = this.parentNode
-  parent.classList.add('focus')
+  let parent = this.parentNode;
+  parent.classList.add("focus");
 }
 
 function blurFunc() {
-  let parent = this.parentNode
-  if (this.value == '') {
-    parent.classList.remove('focus')
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
   }
 }
 
 inputs.forEach((input) => {
-  input.addEventListener("focus",focusFunc)
-  input.addEventListener("blur",blurFunc)
-
-})
-
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
- const sections = document.querySelectorAll("section[id]")
+const sections = document.querySelectorAll("section[id]");
 
- window.addEventListener("scroll", navHighlighter)
+window.addEventListener("scroll", navHighlighter);
 
- function navHighlighter() {
-  let scrollY = window.pageYOffset
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
 
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50,
-    sectionId = current.getAttribute("id")
+      sectionId = current.getAttribute("id");
 
-    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-      document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add("active-link")
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
-    else{
-      document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove("active-link")
+  });
+}
+/*=============== < src="smtpjs ===============*/
+$(document).ready(function () {
+  $(".pilling").ripples({
+    resolution: 512,
+        dropRadius: 20,
+        perturbance: 0.04,
+  });
+});
+//========================
+// pagepiling
+//========================
 
-    }
-  })
- }
-/*=============== SHOW SCROLL UP ===============*/
