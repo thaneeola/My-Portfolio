@@ -7,10 +7,10 @@
   --hue-color: 242;
 
   /* HSL Color Mode */
-  --skin-color: hsl(342, 92%, 46%);
+  --skin-color: #e1094a;
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
-  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --body-color: #0a0a0f;
   --box-color: hsl(var(--hue-color), 14%, 10%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
@@ -163,9 +163,6 @@ input {
   top: 1.8rem;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: var(--skin-color);
-  text-align: center;
   margin: auto;
 }
 .nav__logo-text {
@@ -329,6 +326,10 @@ input {
   max-width: 450px;
   margin-bottom: var(--mb-2);
 }
+.home__download{
+  display: flex;
+  gap: 20px;
+}
 
 .my__info {
   display: flex;
@@ -371,12 +372,13 @@ input {
   position: relative;
   z-index: 1;
 }
+
+
 .button__download {
   display: inline-flex;
   align-items: center;
   border: 2px solid var(--skin-color);
   column-gap: 0.5rem;
-
   color: var(--text-color);
   padding: 0.75rem 1.4rem;
   border-radius: 0.25rem;
@@ -822,6 +824,8 @@ input {
 .services__modal-content {
   width: 500px;
   position: relative;
+  
+  
   background-color: var(--box-color);
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 0.5rem;
@@ -1490,6 +1494,10 @@ textarea.input {
 
   .home__subtitle {
     font-size: var(--normal-font-size);
+  }
+  .home__download{
+    flex-direction: column;
+   align-items: center;
   }
 
   .about__info {

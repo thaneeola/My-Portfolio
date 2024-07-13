@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/falvicon.png"
+      type="image/x-icon"
+    />
     <!--========== UNICONS ==========-->
     <link
       rel="stylesheet"
@@ -27,13 +32,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- page pilling CSS -->
-  
 
     <title>Thanee_ola Portfolio</title>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
- 
   </head>
 
   <body>
@@ -45,7 +47,9 @@
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-text">T</a>
+          <a href="index.html" class="nav__logo-text"
+            ><img src="./assets/img/my logo 2.png" alt="my log"
+          /></a>
         </div>
         <div class="nav__menu">
           <div class="menu">
@@ -72,7 +76,7 @@
           </div>
         </div>
 
-        <div class="btn__share">
+        <div class="btn__share" id="btn__share">
           <i class="uil uil-share-alt social__share"></i>
         </div>
 
@@ -125,7 +129,8 @@
               High level experience in web design and development
               knowledge,producing quality work.
             </p>
-            <a href="#about" class="button__download">
+          <div class="home__download">
+            <a href="./thanee_ola cv.pdf" class="button__download" download="Thanee_ola cv">
               <span class="material-symbols-outlined button__icon">
                 download
               </span>
@@ -137,6 +142,8 @@
               </span>
               More About Me
             </a>
+          </div>
+           
           </div>
           <div class="my__info">
             <div class="info__item">
@@ -170,7 +177,7 @@
         <h2 data-heading="My intro" class="section__title">About Me</h2>
 
         <div class="about__container container grid">
-          <img src="assets/img/my-about-img.png" alt="" class="about__img" />
+          <img src="assets/img/IMG_20230421_095125_956 1.png" alt="" class="about__img" />
 
           <div class="about__data">
             <h3 class="about__heading">
@@ -447,24 +454,35 @@
 
         <div class="work__container container grid">
           <div class="work__card mix web">
-            <img src="assets/img/work-1.webp" alt="" class="work__img" />
-            <h3 class="work__title">Web Design</h3>
+            <img src="assets/img/audiophile.png" alt="" class="work__img" />
+            <h3 class="work__title">Fully Responsive E-commerce</h3>
             <span class="work__button">
               Demo
               <i class="uil uil-arrow-right work__button-icon"> </i>
             </span>
             <div class="portfolio__item-details">
-              <h3 class="details__title">The Services provide for design</h3>
+              <h3 class="details__title"></h3>
               <p class="details__description">
-                Lorem ipsum dolor, sit aget consecrator adipisicing elia. Eure
-                assumed accusantium moleskins.
+                Developed a robust and fully responsive e-commerce website
+                designed to deliver a seamless shopping experience across all
+                devices. This project involved comprehensive planning, design,
+                and development phases to ensure a feature-rich and
+                user-friendly platform that adapts perfectly to different screen
+                sizes, from desktops to smartphones.
               </p>
               <ul class="details__info">
                 <li>Created - <span>5 feb 2024 </span></li>
-                <li>Technologies - <span>html css</span></li>
+                <li>Technologies - <span>html css JavaScript</span></li>
                 <li>Role - <span>Frontend</span></li>
                 <li>
-                  View - <span><a href="#">www.demo.com</a></span>
+                  View -
+                  <span
+                    ><a
+                      href="https://thaneeola.github.io/lesson-1-duplicate/"
+                      target="_blank"
+                      >www.Audiophile.com</a
+                    ></span
+                  >
                 </li>
               </ul>
             </div>
@@ -494,6 +512,33 @@
             </div>
           </div>
 
+          <div class="work__card mix web">
+            <img src="assets/img/cuntact form.png" alt="" class="work__img" />
+            <h3 class="work__title">Web Design</h3>
+            <span class="work__button">
+              Demo
+              <i class="uil uil-arrow-right work__button-icon"> </i>
+            </span>
+            <div class="portfolio__item-details">
+              <h3 class="details__title">Contact form</h3>
+              <p class="details__description">
+                Developed a fully functional and responsive contact form for a
+                website, designed to capture user inquiries and feedback
+                efficiently. This project involved frontend and backend
+                integration to ensure smooth data handling, validation, and
+                security.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>5 feb 2024 </span></li>
+                <li>Technologies - <span>html css JavaScript</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>
+                  View - <span><a href="https://thaneeola.github.io/contact-form-main/">www.contact-form.com</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div class="work__card mix python">
             <img src="assets/img/work-3.webp" alt="" class="work__img" />
             <h3 class="work__title">Python</h3>
@@ -503,30 +548,6 @@
             </span>
             <div class="portfolio__item-details">
               <h3 class="details__title">signup page using python</h3>
-              <p class="details__description">
-                Lorem ipsum dolor, sit aget consecrator adipisicing elia. Eure
-                assumed accusantium moleskins.
-              </p>
-              <ul class="details__info">
-                <li>Created - <span>5 feb 2024 </span></li>
-                <li>Technologies - <span>html css</span></li>
-                <li>Role - <span>Frontend</span></li>
-                <li>
-                  View - <span><a href="#">www.demo.com</a></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="work__card mix web">
-            <img src="assets/img/work-4.webp" alt="" class="work__img" />
-            <h3 class="work__title">Figma</h3>
-            <span class="work__button">
-              Demo
-              <i class="uil uil-arrow-right work__button-icon"> </i>
-            </span>
-            <div class="portfolio__item-details">
-              <h3 class="details__title"></h3>
               <p class="details__description">
                 Lorem ipsum dolor, sit aget consecrator adipisicing elia. Eure
                 assumed accusantium moleskins.
@@ -636,7 +657,7 @@
         <div class="services__container container grid">
           <div class="services__content">
             <div>
-              <i class="uil uil-web-grid services__icon"></i>
+              <i class="uil uil-arrow services__icon"></i>
               <h3 class="services__title">
                 Web <br />
                 Designer
@@ -692,7 +713,8 @@
 
           <div class="services__content">
             <div>
-              <i class="uil uil-arrow services__icon"></i>
+              <i class="uil uil-web-grid services__icon"></i>
+             
               <h3 class="services__title">
                 UI/UX <br />
                 Designer
@@ -816,8 +838,11 @@
                 <i class="bx bxs-quote-alt-left"></i>
               </div>
               <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
+                Thanee_ola exceeded our expectations with their blend of
+                programming prowess and graphic design creativity. They
+                delivered a robust and visually stunning product, all while
+                maintaining excellent communication and professionalism. Highly
+                recommended!"
               </p>
               <h3 class="testimonial__date">june 22 - 2024</h3>
               <div class="testimonial__profile">
@@ -828,7 +853,7 @@
                 />
 
                 <div class="testimonial__profile-data">
-                  <span class="testimonial__profile-name">Thanee_ola</span>
+                  <span class="testimonial__profile-name">Oyinkansola</span>
                   <span class="testimonial__profile-detail"
                     >Director of a company</span
                   >
@@ -841,8 +866,64 @@
                 <i class="bx bxs-quote-alt-left"></i>
               </div>
               <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
+                Thanee_ola brought our vision to life with exceptional
+                programming skills and eye-catching design. Their ability to
+                seamlessly integrate functionality with aesthetics was
+                impressive. A true professional and a pleasure to work with!
+              </p>
+              <h3 class="testimonial__date">june 22 - 2024</h3>
+              <div class="testimonial__profile">
+                <img
+                  src="assets/img/client2.jpg"
+                  alt=""
+                  class="testimonial__profile__img"
+                />
+
+                <div class="testimonial__profile-data">
+                  <span class="testimonial__profile-name">Crif Fad</span>
+                  <span class="testimonial__profile-detail"
+                    >Director of a company</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <div class="testimonial__quote">
+                <i class="bx bxs-quote-alt-left"></i>
+              </div>
+              <p class="testimonial__description">
+                Thanee_ola provided outstanding service, combining technical
+                expertise with creative design. Their work was both innovative
+                and reliable, making our project a success. Highly professional
+                and highly recommended!
+              </p>
+              <h3 class="testimonial__date">june 22 - 2024</h3>
+              <div class="testimonial__profile">
+                <img
+                  src="assets/img/client3.jpg"
+                  alt=""
+                  class="testimonial__profile__img"
+                />
+
+                <div class="testimonial__profile-data">
+                  <span class="testimonial__profile-name">Klxin</span>
+                  <span class="testimonial__profile-detail"
+                    >Director of a company</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <div class="testimonial__quote">
+                <i class="bx bxs-quote-alt-left"></i>
+              </div>
+              <p class="testimonial__description">
+                The project was transformed with a perfect mix of technical
+                skill and artistic flair. Exceptional programming and design
+                made the final product outstanding. Truly a pleasure to work
+                with!
               </p>
               <h3 class="testimonial__date">june 22 - 2024</h3>
               <div class="testimonial__profile">
@@ -866,8 +947,36 @@
                 <i class="bx bxs-quote-alt-left"></i>
               </div>
               <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
+                The combination of innovative design and solid programming
+                brought our vision to life beautifully. The final product
+                exceeded our expectations, thanks to their expertise and
+                creativity.
+              </p>
+              <h3 class="testimonial__date">june 22 - 2024</h3>
+              <div class="testimonial__profile">
+                <img
+                  src="assets/img/client1.jpg"
+                  alt=""
+                  class="testimonial__profile__img"
+                />
+
+                <div class="testimonial__profile-data">
+                  <span class="testimonial__profile-name">Thanee_ola</span>
+                  <span class="testimonial__profile-detail"
+                    >Director of a company</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <div class="testimonial__quote">
+                <i class="bx bxs-quote-alt-left"></i>
+              </div>
+              <p class="testimonial__description">
+                The project was completed with exceptional attention to detail
+                and creativity. The seamless integration of design and
+                functionality was impressive. Highly satisfied with the results!
               </p>
               <h3 class="testimonial__date">june 22 - 2024</h3>
               <div class="testimonial__profile">
@@ -885,64 +994,14 @@
                 </div>
               </div>
             </div>
-
             <div class="testimonial__card swiper-slide">
               <div class="testimonial__quote">
                 <i class="bx bxs-quote-alt-left"></i>
               </div>
               <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
-              </p>
-              <h3 class="testimonial__date">june 22 - 2024</h3>
-              <div class="testimonial__profile">
-                <img
-                  src="assets/img/client2.jpg"
-                  alt=""
-                  class="testimonial__profile__img"
-                />
-
-                <div class="testimonial__profile-data">
-                  <span class="testimonial__profile-name">Thanee_ola</span>
-                  <span class="testimonial__profile-detail"
-                    >Director of a company</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <div class="testimonial__quote">
-                <i class="bx bxs-quote-alt-left"></i>
-              </div>
-              <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
-              </p>
-              <h3 class="testimonial__date">june 22 - 2024</h3>
-              <div class="testimonial__profile">
-                <img
-                  src="assets/img/client1.jpg"
-                  alt=""
-                  class="testimonial__profile__img"
-                />
-
-                <div class="testimonial__profile-data">
-                  <span class="testimonial__profile-name">Thanee_ola</span>
-                  <span class="testimonial__profile-detail"
-                    >Director of a company</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <div class="testimonial__quote">
-                <i class="bx bxs-quote-alt-left"></i>
-              </div>
-              <p class="testimonial__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-                quisquam preferences sent!
+                Impressed by the unique blend of technical skill and creative
+                design. The final product was both functional and visually
+                appealing. Excellent work and highly recommended!
               </p>
               <h3 class="testimonial__date">june 22 - 2024</h3>
               <div class="testimonial__profile">
@@ -1074,7 +1133,6 @@
         </div>
       </section>
 
-  
       <!--===== FOOTER =====-->
       <footer class="footer pilling">
         <div class="footer__bg">

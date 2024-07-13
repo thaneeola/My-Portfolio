@@ -180,5 +180,28 @@ $(document).ready(function () {
 });
 //========================
 // pagepiling
+
+// Get the share button element
+const shareButton = document.getElementById('btn__share');
+
+// Function to handle sharing
+function shareContent() {
+    // Check if the Web Share API is supported
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check out this awesome content!',
+            text: 'I found this interesting article/page.',
+            url: window.location.href
+        })
+        .then(() => console.log('Content shared successfully'))
+        .catch((error) => console.log('Error sharing content:', error));
+    } else {
+        // Fallback for browsers that don't support the Web Share API
+        alert('Web Share API is not supported in your browser. You can manually copy the URL to share.');
+    }
+}
+
+// Add click event listener to the share button
+shareButton.addEventListener('click', shareContent);
 //========================
 
