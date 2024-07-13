@@ -189,7 +189,7 @@ function shareContent() {
     // Check if the Web Share API is supported
     if (navigator.share) {
         navigator.share({
-            title: 'Check out this awesome content!',
+            title: 'Thanee_ola Portfolio',
             text: 'I found this interesting article/page.',
             url: window.location.href
         })
