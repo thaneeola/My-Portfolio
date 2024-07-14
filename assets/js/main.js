@@ -5,11 +5,6 @@ const navMenu = document.getElementById("sidebar"),
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-sidebar");
-  });
-}
 
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
@@ -174,34 +169,48 @@ function navHighlighter() {
 $(document).ready(function () {
   $(".pilling").ripples({
     resolution: 512,
-        dropRadius: 20,
-        perturbance: 0.04,
+    dropRadius: 20,
+    perturbance: 0.04,
   });
 });
 //========================
 // pagepiling
 
 // Get the share button element
-const shareButton = document.getElementById('btn__share');
+const shareButton = document.getElementById("btn__share");
 
 // Function to handle sharing
 function shareContent() {
-    // Check if the Web Share API is supported
-    if (navigator.share) {
-        navigator.share({
-            title: 'Thanee_ola Portfolio',
-            text: 'I found this interesting article/page.',
-            url: window.location.href
-        })
-        .then(() => console.log('Content shared successfully'))
-        .catch((error) => console.log('Error sharing content:', error));
-    } else {
-        // Fallback for browsers that don't support the Web Share API
-        alert('Web Share API is not supported in your browser. You can manually copy the URL to share.');
-    }
+  // Check if the Web Share API is supported
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Thanee_ola Portfolio",
+        text: "This is thanee_ola portfolio.",
+        url: window.location.href,
+      })
+      .then(() => console.log("Content shared successfully"))
+      .catch((error) => console.log("Error sharing content:", error));
+  } else {
+    // Fallback for browsers that don't support the Web Share API
+    alert(
+      "Web Share API is not supported in your browser. You can manually copy the URL to share."
+    );
+  }
 }
 
 // Add click event listener to the share button
-shareButton.addEventListener('click', shareContent);
+shareButton.addEventListener("click", shareContent);
 //========================
 
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show-sidebar");
+});
+
+const navLinks = document.querySelectorAll(".nav__menu a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show-sidebar");
+  });
+});

@@ -1212,10 +1212,7 @@ textarea.input {
     transform: translateX(0);
   }
 
-  .nav__logo,
-  .btn__share {
-    display: none;
-  }
+ 
 
   .nav__menu {
     height: 100%;
@@ -1224,6 +1221,12 @@ textarea.input {
     display: flex;
     justify-content: center;
   }
+
+
+  .hide-sidebar {
+    display: none;
+  }
+
 
   .nav__list {
     flex-direction: column;
